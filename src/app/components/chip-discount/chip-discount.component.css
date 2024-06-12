@@ -1,0 +1,32 @@
+.discount {
+    height: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+    flex-shrink: 0;
+    display: flex;
+    pointer-events: none;
+    .dis-text {
+        color: rgba(255, 255, 255, 1);
+        line-height: 1rem;
+        font-size: .625rem;
+        background-color: rgba(246, 145, 19, 1);
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+.flex-none {
+    flex: none;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
