@@ -1,0 +1,42 @@
+.chip-action {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex-direction: row;
+    max-width: 100%;
+    display: flex;
+    position: relative;
+    pointer-events: none;
+    height: 16px;
+}
+
+
+.action-image {
+    background-color: rgba(235, 23, 23, 1);
+    padding: 1px;
+    border-top-left-radius: .125rem;
+    border-bottom-left-radius: .125rem;
+    position: relative;
+}
+
+.action-text {
+    background-color: rgba(235, 23, 23, 1);
+    border-top-right-radius: .125rem;
+    border-bottom-right-radius: .125rem;
+    position: relative;
+}
+
+.transparency {
+    background-color: rgba(235, 23, 23, .361);
+}
+
+.text {
+    color: rgba(255, 255, 255, 1);
+    line-height: 16px;
+    font-size: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: .25rem;
+    margin-left: .125rem;
+    position: relative;
+}

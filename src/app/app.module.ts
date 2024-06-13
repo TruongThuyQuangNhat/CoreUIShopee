@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CardProductComponent } from './components/card-product/card-product.component';
 import { ChipDiscountComponent } from './components/chip-discount/chip-discount.component';
 import { ChipTextComponent } from './components/chip-text/chip-text.component';
+import { ChipActionComponent } from './components/chip-action/chip-action.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ChipTextComponent } from './components/chip-text/chip-text.component';
     AppComponent,
     CardProductComponent,
     ChipDiscountComponent,
-    ChipTextComponent
+    ChipTextComponent,
+    ChipActionComponent
   ],
   imports: [
     BrowserModule,

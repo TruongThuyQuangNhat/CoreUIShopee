@@ -1,41 +1,76 @@
 .card {
     width: 200px;
-    height: 304px;
-    padding: .3125rem;
+    height: 313px;
     box-sizing: border-box;
     display: block;
-    .img-card {
-        width: 186px;
-        height: 186px;
-    }
-    .des-card {
-        padding: .5rem;
-        height: 88px;
-        width: 170px;
-        .title {
-            opacity: 1;
-            margin-bottom: 0.25rem;
-            height: 40px;
-            font-size: .875rem;
-            line-height: 1.25rem;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 2;
+    position: relative;
+    border-color: rgba(0, 0, 0, .09);
+    border-style: solid;
+    border-width: 1px;
+    .card-content {
+        .img-card {
+            width: 198px;
+            height: 198px;
         }
-        .chip {
-            height: 20px;
-            font-size: .625rem;
-            line-height: .75rem;
-            overflow: hidden;
-            align-items: center;
-            display: flex;
-            margin-bottom: .5rem;
-            
+        .tag-discount {
+            color: rgba(238, 77, 45, 1);
+            font-weight: 500;
+            font-size: .75rem;
+            line-height: .875rem;
+            padding-bottom: .125rem;
+            padding-top: .125rem;
+            padding-left: .25rem;
+            padding-right: .25rem;
+            background-color: rgba(254, 238, 234, 1);
+            z-index: 30;
+            position: absolute;
+            top: 0;
+            right: 0;
         }
-        .price {
-            height: 20px;
+        .des-card {
+            padding: .5rem;
+            height: 88px;
+            width: 182px;
+            .title {
+                opacity: 1;
+                margin-bottom: 0.25rem;
+                height: 40px;
+                font-size: .875rem;
+                line-height: 1.25rem;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+            }
+            .chip {
+                height: 20px;
+                font-size: .625rem;
+                line-height: .75rem;
+                overflow: hidden;
+                align-items: center;
+                display: flex;
+                margin-bottom: .5rem;
+                
+            }
+            .price {
+                height: 20px;
+                display: flex;
+                align-items: baseline;
+                color: rgba(238, 77, 45, 1);
+                .unit {
+                    font-size: .75rem;
+                    line-height: .875rem;
+                }
+                .money {
+                    font-size: 1rem;
+                    line-height: 1.25rem;
+                }
+            }
         }
     }
 }
 
+.card:hover {
+    border-color: rgba(238, 77, 45, 1);
+    transform: scale(1.01);
+}
